@@ -160,5 +160,161 @@ body {
 /* Section 2 */
 
 .section2 {
-    background-image: url();
+    background-image: linear-gradient(#0d6dfdd0, #0d6dfdd0), url(./free-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 485px;
+    text-align: center;
+    padding: 130px 0;
+    color: #fff;
+}
+
+.section2 h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    width: 35%;
+    margin: 8px auto 24px;
+    line-height: 32px;
+    font-weight: 500;
+    position: relative;
+}
+
+.section2 h1::before {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10%;
+    height: 1px;
+    background: #fff;
+}
+
+.section2 p {
+    line-height: 22px;
+}
+
+.section2 .button {
+    background: #fff;
+    padding: 8.5px 23px;
+    text-decoration: none;
+    color: #0d6efd;
+    border-radius: 22px;
+    margin-top: 30px;
+    display: inline-block;
+    transition: all .5s;
+    position: relative;
+    border: 1px solid transparent;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.section2 .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #0d6efd;
+    z-index: -1;
+    transition: all .5s;
+}
+
+.section2 .button:hover::before {
+    width: 100%;
+}
+
+.section2 .button:hover {
+    color: #fff;
+}
+
+/* Section 3 */
+
+.section3 {
+    padding: 70px 0 60px;
+}
+
+.section3 .container {
+    width: 79%;
+    margin: auto;
+}
+
+.section3 .box-row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box-row .box1 {
+    width: 63%;
+    background: #0d6efd;
+    border-radius: 5px;
+    padding: 45px 40px;
+    color: #fff;
+    height: 233px;
+}
+
+.box-row .box1 h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.box-row .box1 p {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.box-row .box1 input[type="email"] {
+    padding: 3px 16px;
+    background: #fff;
+    border-radius: 18px;
+    border: none;
+    font-size: 17px;
+}
+
+.box-row .box1 input[type="email"]:focus {
+    outline: none;
+}
+
+.box-row .box1 input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: 1px solid #fff;
+    padding: 3px 12px;
+    font-size: 16.5px;
+    color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.box-row .box2 {
+    width: 33%;
+    box-shadow: 0 0 10px 2px #ccc;
+    background: #fff;
+    padding: 25px 40px;
+    height: auto;
+}
+
+.box-row .box2 h3 {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.box-row .box2 .button {
+    padding: 3.5px 17px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 80px;
 }
